@@ -1,9 +1,10 @@
 .blog-masthead
   .container
     %nav.blog-nav
-      = link_to "Home", root_path, class: "blog-nav-item active"
-      = link_to "Topics", topics_index_path, class: "blog-nav-item"
-      = link_to "Videos", "#", class: "blog-nav-item"
-      = link_to "Gallery", "#", class: "blog-nav-item"
-      = link_to "About", "#", class: "blog-nav-item"
-      = link_to "Contact Us", contact_us_index_path, class: "blog-nav-item"
+      - active_klass = "active"
+      = link_to "Home", root_path, class: "blog-nav-item #{controller.controller_name == "home" ? active_klass : ''}"
+      = link_to "Topics", topics_index_path, class: "blog-nav-item #{controller.controller_name == "topics" ? active_klass : ''}"
+      = link_to "Videos", "#", class: "blog-nav-item #{controller.controller_name == "videos" ? active_klass : ''}"
+      = link_to "Gallery", "#", class: "blog-nav-item #{controller.controller_name == "gallery" ? active_klass : ''}"
+      = link_to "About", about_index_path, class: "blog-nav-item #{controller.controller_name == "about" ? active_klass : ''}"
+      = link_to "Contact Us", contact_us_index_path, class: "blog-nav-item #{controller.controller_name == "contact_us" ? active_klass : ''}"

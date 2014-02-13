@@ -1,4 +1,6 @@
 Dennis::Application.routes.draw do
+  get "about/index"
+
   get "contact_us/index"
 
   get "home/index"
