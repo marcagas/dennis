@@ -6,7 +6,9 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem "haml", "~> 4.0.5"
-#gem 'sqlite3'
+gem 'sqlite3'
+gem "activerecord-postgresql-adapter"
+gem "pg"
 
 
 # Gems used only for assets and not required
