@@ -1,4 +1,6 @@
 Dennis::Application.routes.draw do
+  get "contact_us/index"
+
   get "home/index"
   get "topics/index"
   root :to => 'home#index'
