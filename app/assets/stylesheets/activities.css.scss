@@ -1,0 +1,39 @@
+// Place all the styles related to the activities controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#activities {
+  .title {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 40px;
+  }
+
+  span.objective, td.activity-title {
+    line-height: 60px;
+  }
+
+  .activity2 .table.borderless {
+    margin: 0 auto;
+    td {
+      border: 0;
+    }
+  }
+
+  .next {
+    margin-top: 40px;
+  }
+
+  .padding-left0 {
+    padding-left: 0;
+  }
+
+  .text-indent50 {
+    text-indent:50px;
+  }
+
+}
+
+.bold {
+  font-weight: bold;
+}
